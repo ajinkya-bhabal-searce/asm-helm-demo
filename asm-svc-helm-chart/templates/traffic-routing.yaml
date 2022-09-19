@@ -9,15 +9,16 @@ spec:
   gateways:
   - {{ .Values.virtualservice.gateways }} 
   http:
-  {{- range $key, $value := .Values.destination }}
-  - route:
+    {{- range $key, $value := .Values.destination }}
+  - name: {{ $value.rtname }}
+    route: 
     - destination:
         host: {{ $value.host }}
         subset: {{ $value.subset }} 
-      weight: {{ $value.weight }} 
+      weight: {{ $value.weight }}
     retries:
       attempts: {{ $value.retries.attempts }}
       perTryTimeout: {{ $value.retries.perTryTimeout }}
       retryOn: {{ $value.retries.retryOn }}
     timeout: {{ $value.retries.timeout }}
-      {{- end }}
+    {{- end }}

@@ -3,9 +3,9 @@ entries:
   asmvrtsvc:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-09-19T20:56:54.6831843+05:30"
+    created: "2022-09-19T22:50:08.4746268+05:30"
     description: Helm chart for Anthos Service Mesh Virtual Service
-    digest: c4bd7c3770d69530dc7c2aeb474cfce925df8b2ab6d7ae7e83c688da484d7d1f
+    digest: 7ec1d73a90e05498346cae05b160452beeebd28a38ecedb60f68b0343cb2e54c
     name: asmvrtsvc
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-09-19T20:56:54.6831405+05:30"
+    created: "2022-09-19T22:50:08.4746268+05:30"
     description: Helm chart for Anthos Service Mesh Virtual Service
     digest: f94719f7b1b0fe55b98953ff186954d14ace2a1721c28c05d9083603bdbd8cb3
     name: asmvrtsvc
@@ -23,7 +23,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-09-19T20:56:54.678295+05:30"
+    created: "2022-09-19T22:50:08.4746268+05:30"
     description: Helm chart for Anthos Service Mesh Virtual Service
     digest: aa5c55f82b9a4c5a7f107b69937017ffb151c468931875c08f45d51ddf4f0b97
     name: asmvrtsvc
@@ -33,7 +33,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-09-19T20:56:54.6747323+05:30"
+    created: "2022-09-19T22:50:08.4746268+05:30"
     description: Helm chart for Anthos Service Mesh Virtual Service
     digest: fe55a8e5410a7c5a257b78875ed21a306323f54cbca8d97b339f583101acbc2c
     name: asmvrtsvc
@@ -43,7 +43,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2022-09-19T20:56:54.671027+05:30"
+    created: "2022-09-19T22:50:08.4692139+05:30"
     description: Helm chart for Anthos Service Mesh Virtual Service
     digest: 8aeeec23f7561bc4e91457192ac13d9f99580ea6cf274e51833fea797db7c73a
     name: asmvrtsvc
@@ -51,4 +51,4 @@ entries:
     urls:
     - asmvrtsvc-0.1.1.tgz
     version: 0.1.1
-generated: "2022-09-19T20:56:54.6654135+05:30"
+generated: "2022-09-19T22:50:08.4640966+05:30"

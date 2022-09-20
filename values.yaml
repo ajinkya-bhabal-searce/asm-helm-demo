@@ -1,0 +1,51 @@
+namespace: demo
+
+## Create Istio Virtual Service for Weighted routing Policy
+weightVirtualsvc:
+  enabled: false
+  name: weightroute01
+  hosts: ajinkyagasm.searceinc.net
+  gateways: asm-ingress/asm-ingressgateway
+  destination:
+    v1:
+      host: demo
+      subset: v1
+      weight: 50
+    v2: 
+      host: demo
+      subset: v2
+      weight: 50
+
+## DestinationRule defines policies that apply to traffic intended for a service after routing has occurred.
+destinationrule:
+  name: demodestrle
+  host: demo
+  destination:
+    v1:
+      subset: v1
+    v2:
+      subset: v2
+
+trafficPolicytlsmode:
+  value: ISTIO_MUTUAL
+
+## Lock down mutual TLS for the entire mesh
+PeerAuthentication:
+  name: "default"
+  tlsmode: STRICT
+
+## Create Istio Virtual Service for HTTP Retry Policy
+retryVirtualsvc:
+  enabled: true
+  name: retryroute01
+  hosts: ajinkyagasm.searceinc.net
+  gateways: asm-ingress/asm-ingressgateway
+  destination:
+    http01:
+      host: demo
+      subset: v1
+      retries:
+        attempts: 4
+        perTryTimeout: 2s
+        retryOn: 5xx
+        timeout: 10s

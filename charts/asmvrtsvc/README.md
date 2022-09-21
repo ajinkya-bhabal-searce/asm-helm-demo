@@ -1,1 +1,1 @@
-# Anthos Service Mesh Virtual Service Helm Chart
+# Google Anthos Service Mesh Virtual Service Helm Chart

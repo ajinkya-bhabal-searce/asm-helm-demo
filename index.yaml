@@ -3,6 +3,16 @@ entries:
   asmvrtsvc:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2022-09-22T09:22:05.76777988Z"
+    description: Helm chart for Anthos Service Mesh Virtual Service
+    digest: b6e1440f9c29bb72a3706fe04e70f1e574fc395d3fc6565f5dac88487b9fba04
+    name: asmvrtsvc
+    type: application
+    urls:
+    - https://github.com/ajinkya-bhabal-searce/asm-helm-demo/releases/download/asmvrtsvc-0.1.3/asmvrtsvc-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2022-09-22T06:41:57.10942447Z"
     description: Helm chart for Anthos Service Mesh Virtual Service
     digest: e5948ebbedaf48e5cdaf7c64dde314ae13c717f05f733dea302f97c9448b298e

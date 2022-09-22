@@ -9,7 +9,7 @@ spec:
   {{- range $key, $value := .Values.destinationrule.destination }}  
   - name: {{ $value.subset }}
     labels:
-      version: {{ $value.subset }} 
+      app: {{ $value.subset }} 
   {{- end }}    
   trafficPolicy: 
     tls: 

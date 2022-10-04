@@ -14,6 +14,8 @@ spec:
     {{- range $key, $value := .Values.weightVirtualsvc.destination }}
     - destination:
         host: {{ $value.host }}
+        port:
+          number: {{ $value.port }} 
         subset: {{ $value.subset }} 
       weight: {{ $value.weight }}       
     {{- end }}

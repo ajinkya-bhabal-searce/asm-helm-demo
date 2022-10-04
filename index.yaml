@@ -1,6 +1,27 @@
 apiVersion: v1
 entries:
+  asm-resource-deployment:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-10-04T14:00:13.907337227Z"
+    description: A Helm chart for ASM Deployment
+    digest: 8cfe68774be65d7594719600519795c3f624e25d6f24f16558e17be6c323e5f8
+    name: asm-resource-deployment
+    type: application
+    urls:
+    - https://github.com/ajinkya-bhabal-searce/asm-helm-demo/releases/download/asm-resource-deployment-0.1.4/asm-resource-deployment-0.1.4.tgz
+    version: 0.1.4
   asmvrtsvc:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-10-04T14:00:14.036604169Z"
+    description: Helm chart for Anthos Service Mesh Virtual Service
+    digest: d1422c13db6dce188b1dc50edb798ff4b529450dc83fa22d866ce821606fbff6
+    name: asmvrtsvc
+    type: application
+    urls:
+    - https://github.com/ajinkya-bhabal-searce/asm-helm-demo/releases/download/asmvrtsvc-0.1.4/asmvrtsvc-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: "1.0"
     created: "2022-09-22T09:22:05.76777988Z"

@@ -11,4 +11,4 @@ deployment:
 service:
   type: NodePort
   port: 80
-  nodePort: 8888
+  nodePort: 31000

@@ -1,0 +1,14 @@
+# This is YAML-formatted file
+# Sample Values.yaml file
+
+deployment:
+  replicas: 2
+  name: dev-nginx-srv-01
+  image: 
+    repository: nginx
+    tag: 1.14.2
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 8888

@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  app:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2022-12-07T07:18:27.98753988Z"
+    description: Nginx web server
+    digest: 18a45831a834e6fe20871181a61ae790eb88bdef0b2ea1466cda6d35f62b2d89
+    name: app
+    type: application
+    urls:
+    - https://github.com/ajinkya-bhabal-searce/asm-helm-demo/releases/download/app-0.1.1/app-0.1.1.tgz
+    version: 0.1.1
   asm-resource-deployment:
   - apiVersion: v2
     appVersion: "1.0"
